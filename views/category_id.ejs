@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%
+         albums.forEach(function(post) {
+              var id = post.id;
+              var title = post.title;
+              var content = post.content;
+    %>
+
+    <h1><a href="#"><%=  title %></a></h1>
+    <%- content %>
+    <% });%>
+  </body>
+</html>
